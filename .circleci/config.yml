@@ -19,7 +19,8 @@ jobs:
       - run:
           name: Install TypeScript
           command: |
-            npm install typescript@~3.5.3 -g
+            npm uninstall typescript
+            npm install typescript@3.5.3 --save-dev
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
